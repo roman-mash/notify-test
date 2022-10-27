@@ -44,5 +44,9 @@
   const getNotBtn = document.querySelector('#getNot');
   getNotBtn.addEventListener('click', () => {
     showNotification();
+    ServiceWorkerRegistration.showNotification('JavaScript Notification API', {
+      body: 'This is a JavaScript Notification API demo',
+      icon: './img/js.jpg',
+    });
   });
 })();
